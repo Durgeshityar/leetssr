@@ -1,0 +1,40 @@
+/**
+ * An array of routes that is accessible to public
+ * These routes do not require authentication
+ * @type {string[]}
+ */
+export const publicRoutes = ['/']
+
+/**
+ * TODO: Add these routes back in to the publicRoutes array
+ * '/auth/new-verification'
+ */
+
+/**
+ * An array of routes that is accessible to public
+ * These routes will redirect loggedin users to /settings
+ * @type {string[]}
+ */
+export const authRoutes = ['/']
+
+/**
+ * TODO: Add these routes back in to the authRoutes array
+ * '/auth/login',
+ * '/auth/register',
+ * '/auth/error',
+ * '/auth/reset',
+ * '/auth/new-password',
+ */
+
+/**
+ * The prefix for API authentication routes
+ * Routes that start with this prefix are used for API authentication process
+ * @type {string[]}
+ */
+export const apiAuthPrefix = '/api/auth'
+
+/**
+ * The default redirected path after log in
+ * @type {string[]}
+ */
+export const DEFAULT_LOGIN_REDIRECT = '/settings'
