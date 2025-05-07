@@ -78,8 +78,8 @@ export function Solution() {
               Not Just Another Flashcard App
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              We've built the IDE-integrated spaced repetition system we wished
-              existed
+              We&apos;ve built the IDE-integrated spaced repetition system we
+              wished existed
             </p>
           </motion.div>
         </div>

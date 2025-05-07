@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 const testimonials = [
   {
@@ -47,8 +48,8 @@ export function SocialProof() {
               Proven Results
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Join thousands of engineers who've transformed their interview
-              preparation
+              Join thousands of engineers who&apos;ve transformed their
+              interview preparation
             </p>
           </motion.div>
         </div>
@@ -97,10 +98,12 @@ export function SocialProof() {
               <div className="absolute inset-0 bg-gradient-to-b from-gray-800/50 to-transparent rounded-xl"></div>
               <div className="relative p-8 border border-gray-800 rounded-xl backdrop-blur-sm hover:border-gray-700 transition-colors">
                 <div className="flex items-center mb-6">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.author}
-                    className="w-10 h-10 rounded-full ring-1 ring-gray-800"
+                    width={40}
+                    height={40}
+                    className="rounded-full ring-1 ring-gray-800"
                   />
                   <div className="ml-4">
                     <h4 className="text-white font-medium">
